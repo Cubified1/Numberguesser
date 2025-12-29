@@ -20,12 +20,22 @@ else:
 
 if Difficulty == "easy":
     user_guess = int(input("guess the number from 1 to 50: "))
+    while user_guess > 50 or user_guess < 0:
+        print("please enter a number between 1 and 50")
+        user_guess = int(input("guess the number from 1 to 50: "))
+
 
 elif Difficulty == "medium":
     user_guess = int(input("guess the number from 1 to 100: "))
+    while user_guess > 100 or user_guess < 1:
+        print("please enter a number between 1 and 100")
+        user_guess = int(input("guess the number from 1 to 100: "))
 
 else:
     user_guess = int(input("guess the number from 1 to 1000: "))
+    while user_guess > 1000 or user_guess < 1:
+        print("please enter a number between 1 and 1000")
+        user_guess = int(input("guess the number from 1 to 1000: "))
 
 while not user_guess == Correct_Number:
     print("wrong guess, try again")
