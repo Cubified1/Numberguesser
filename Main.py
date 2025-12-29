@@ -8,10 +8,10 @@ if Difficulty == "Easy":
     Correct_Number = random.randint(1, 50)
 
 elif Difficulty == "Medium":
-    Correct_Number = random.randint(50, 100)
+    Correct_Number = random.randint(1, 100)
 
 else:
-    Correct_Number = random.randint(100, 1000)
+    Correct_Number = random.randint(1, 1000)
 
 
 if Difficulty == "Easy":
