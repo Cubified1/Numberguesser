@@ -1,11 +1,12 @@
 import random
 import time
 
+print("Welcome to Number Guess Game")
+
 Difficulty = input("What difficulty would you like to guess? Easy, Medium, Hard: ").lower()
 Incorrect_Guesses = 0
 Close_Counter = 0
 
-print("Welcome to Number Guess Game")
 
 if Difficulty == "easy":
     Correct_Number = random.randint(1, 50)
