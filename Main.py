@@ -15,7 +15,7 @@ elif Difficulty == "medium":
 
 else:
     Correct_Number = random.randint(1, 1000)
-print(Correct_Number)
+
 
 
 if Difficulty == "easy":
