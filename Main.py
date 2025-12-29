@@ -5,6 +5,7 @@ Difficulty = input("What difficulty would you like to guess? Easy, Medium, Hard:
 Incorrect_Guesses = 0
 Close_Counter = 0
 
+print("Welcome to Number Guess Game")
 
 if Difficulty == "easy":
     Correct_Number = random.randint(1, 50)
@@ -14,7 +15,7 @@ elif Difficulty == "medium":
 
 else:
     Correct_Number = random.randint(1, 1000)
-
+print(Correct_Number)
 
 
 if Difficulty == "easy":
@@ -33,8 +34,11 @@ while not user_guess == Correct_Number:
         print(f"you've guessed wrong {Incorrect_Guesses} time")
     else:
         print(f"you've guessed wrong {Incorrect_Guesses} times")
-    quit = str(input("Would you like to quit? (y/n)"))
+    quit = input("Would you like to quit? (y/n): ").lower()
 
+    while not quit in ("n", "y"):
+        print("please enter a y or n")
+        quit = input("Would you like to quit? (y/n): ").lower()
 
 
     if quit == "y":
@@ -44,7 +48,8 @@ while not user_guess == Correct_Number:
         break
 
 
-    elif Difficulty == "easy":
+
+    if Difficulty == "easy":
         user_guess = int(input("guess the number from 1 to 50: "))
     elif Difficulty == "medium":
         user_guess = int(input("guess the number from 1 to 100: "))
