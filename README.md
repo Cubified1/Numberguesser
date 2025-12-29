@@ -1,2 +1,2 @@
 # PythonRandomNumberGuess
-A random number guesser that i tried making myself before i continue ahead on brocodes python course to see what i have learnt
+A random number guesser that i tried making myself before i continue watching the random number game exerise and ahead on brocode python course to see what i have learnt
